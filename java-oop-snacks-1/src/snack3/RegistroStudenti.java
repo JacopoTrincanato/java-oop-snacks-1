@@ -15,7 +15,7 @@ public class RegistroStudenti {
     // metodo per aggiungere gli studenti
     public String aggiungiStudente(Studente studente) {
         registro.add(studente);
-        return "Lo studente " + studente + " è stato aggiunto al registro";
+        return "Lo studente " + studente.stringaConcatenata() + " è stato aggiunto al registro";
     }
 
     // metodo per stampare gli studenti
