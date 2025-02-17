@@ -10,8 +10,10 @@ public class RegistroStudenti {
         registro = new Studente[0];
     }
 
-    // metodo per aggiungere uno studente
-    public void aggiungiStudente() {
+    // metodo per aggiungere gli studenti
+
+    // metodo per stampare gli studenti
+    public void stampaStudente() {
         System.out.println(registro);
     }
 }
