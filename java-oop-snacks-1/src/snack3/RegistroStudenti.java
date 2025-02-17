@@ -1,16 +1,22 @@
 package snack3;
 
+import java.util.ArrayList;
+
 public class RegistroStudenti {
 
     // attributi
-    private Studente[] registro;
+    private ArrayList<Studente> registro;
 
     // costruttore
     RegistroStudenti() {
-        registro = new Studente[0];
+        registro = new ArrayList<Studente>();
     }
 
     // metodo per aggiungere gli studenti
+    public String aggiungiStudente(Studente studente) {
+        registro.add(studente);
+        return "Lo studente " + studente + " è stato aggiunto al registro";
+    }
 
     // metodo per stampare gli studenti
     public void stampaStudente() {
