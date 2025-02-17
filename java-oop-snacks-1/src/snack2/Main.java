@@ -11,6 +11,7 @@ public class Main {
         // testo il deposito denaro
         System.out.println(conto.depositaDenaro(new BigDecimal(2000)));
 
+        // testo il prelevamento denaro
         System.out.println(conto.prelevaDenaro(new BigDecimal(1000)));
 
     }
