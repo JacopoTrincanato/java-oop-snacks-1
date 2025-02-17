@@ -5,12 +5,17 @@ public class Studente {
     // attributi
     public String nome;
     public String cognome;
-    public String eta;
+    public int eta;
 
     // costruttore
-    Studente(String nome, String cognome, String eta) {
+    Studente(String nome, String cognome, int eta) {
         this.nome = nome;
         this.cognome = cognome;
         this.eta = eta;
+    }
+
+    // metodo che restituisca la stringa concatenata
+    public String stringaConcatenata() {
+        return this.nome + ' ' + this.cognome + ',' + ' ' + this.eta + " anni";
     }
 }
